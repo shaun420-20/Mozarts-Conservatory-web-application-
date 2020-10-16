@@ -1,0 +1,18 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="FEES">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="fee-Details" maxOccurs="unbounded" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element type="xs:string" name="Programs"/>
+              <xs:element type="xs:string" name="Category"/>
+              <xs:element type="xs:string" name="Duration"/>
+              <xs:element type="xs:short" name="Fees"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

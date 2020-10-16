@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+     <title>Home</title>
+     <link rel="stylesheet" type="text/css" href="style2.css">
+	 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+	 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+* {
+    box-sizing: border-box;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.basic{
+    background-color: rgba(0,128,128,0.5);
+	color: white;
+	box-shadow: 5px 10px 16px 10px rgba(256,147,256,0.2);
+	padding:10px;
+	border-radius:50px;
+	}
+
+
+.card-container {
+  cursor: pointer;
+  height: 100%;
+  perspective: 600;
+  position: relative;
+  width: 100%;
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition:all 1s ease-in-out;
+  width: 100%;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .side {
+  backface-visibility: hidden;
+  border-radius: 6px;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+}
+.card .back {
+  background: #093145;
+  color: white;
+  line-height: 35px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-132203373-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132203373-1');
+</script>
+
+
+</head>
+
+  <body style=" background-image: linear-gradient(to bottom left, #333399 20%, #ff0066 81%);">
+   <header>
+     <div class="logo"><h5>Mozart's Conservatory</h5></div>
+      
+      <nav>
+       <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="aboutus.html">About Us</a></li>
+          <li class="sub-menu"><a href="#">Programes</a>
+            <ul>
+              <li><a href="piano.html">Piano</a></li>
+              <li><a href="violin.html">Violin</a></li>
+              <li><a href="guitar.html">Guitar</a></li>
+              <li><a href="vocals.html">Vocal</a></li>
+            </ul>
+          </li>
+        <li><a href="Band-it-festival.html">Band Festival</a></li>
+        <li><a href="registration.html">Registration</a></li>
+         <li><a href="contactus.html">Contact Us</a></li>
+         <li><a href="login.html">Log in</a></li>
+       </ul>
+     </nav>
+     <div class="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+   </header>
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+       $('.menu-toggle').click(function(){
+         $('nav').toggleClass('active')
+       })
+        $('ul li').click(function(){
+          $(this).siblings().removeClass('active');
+          $(this).toggleClass('active');
+        })
+    })
+  </script>
+<br>
+   <br>
+   <br>
+   <br>
+   <br>
+<div>
+<img src="icon.png" alt="icon" style="width:100%;height:100%;">
+</div>
+<br>
+   <br>
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="rock2.jpg" alt="rock"
+  style="width:100%">
+ <img class="mySlides" src="concert.jpg" alt="concert"
+  style="width:100%">
+<div>
+<marquee><h4 style="color:orange"><b>ADMISSIONS OPEN</b> TILL <mark>4th November,2018</mark>.Late applications won't be entertained...The admission forms for guitar (POP & ROCK) will be out on 20th September,2018</h4></marquee>
+</div>
+</section>
+
+<script>
+// Automatic Slideshow - change image every 5 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}
+    x[myIndex-1].style.display = "block";
+    setTimeout(carousel, 3000);
+}
+</script>
+
+
+<h2 class="basic" style="font-size:400%"><center>ABOUT US</center></h2>
+
+<p><h3 style="font-family:CopprplGoth BT";><center>
+	The MOZART'S CONSERVATORY beats at the very heart of Mumbai's thriving entertainment business.
+	<br>WE offer a range of part time & full time courses in Hindustani & <br>Western classical music & music technology.
+	We offer programmes for all ages & abilities.<br>From the import of quality instruments & accessories to raising the floor for musicians.<br>MC strives to continue to uplift the standards of music activity all over the country.
+	<br>We meet the highest standards of International education & proud to e affiliated to TRINITY COLLEGE OF MUSIC,LONDON .The directors of MC play a pivotal role in steering MC towards its success.
+	</center></h3>
+	</p>
+
+<h2 class="basic" style="font-size:400%"><center>OUR PROGRAMMES</center></h2>
+<div class="row">
+  <div class="column">
+    <div class="card-container">
+      <div class="card">
+        <div class="side"><a href="piano.html"><img src="piano.jpg" alt="Piano" border=10 style="width:100%;height:100%"></a></div>
+          <div class="side back"><i><b>Music is fun and gratifying.All children have the need to express themselves and playing a musical instrument can provide an outlet for creative and emotional expression</b></i></div>
+      </div>
+    </div>
+  </div>
+   <div class="column">
+     <div class="card-container">
+       <div class="card">
+         <div class="side"><a href="guitar.html"><img src="guitar.jpg" alt="Guitar" border=10 style="width:100%;height:100%"></a></div>
+           <div class="side back"><i><b>Learning the guitar has always been on the withlist of almost every human being at some point in their lives</b></i></div>
+       </div>
+     </div>
+  </div>
+
+  <div class="column">
+     <div class="card-container">
+       <div class="card">
+         <div class="side"><a href="violin.html"><img src="violin.jpg" alt="Violin" border=10 style="width:100%;height:100%"></a></div>
+           <div class="side back"><i><b>Mozart's Conservatory offers this beautiful musical journey for age 8 and above. The students will be trained from the beginning and you will see how easily and skilfully they can do magic</b></i></div>
+       </div>
+     </div>
+  </div>
+
+<div class="column">
+     <div class="card-container">
+       <div class="card">
+         <div class="side"><a href="vocals.html"><img src="vocalshd.jpg" alt="Vocalshd" border=10 style="width:100%;height:100%"></a></div>
+           <div class="side back"><i><b>Singing comes naturally to most of us. Children connect with music,especially singing ,very easily,as early as listening to a mother's lullaby that lulls them to sleep.</b></i></div>
+       </div>
+     </div>
+ </div>
+</div>	
+
+
+
+<h2 class="basic" style="font-size:400%"><center>VISION</center></h2>
+<h3 style="font-family:CopprplGoth BT;">To ensure the highest standard of music education through offering innovative individual & group programs.To provide high quality programming in a professional & healthy environment that contributes to student success.</h3>
+<h2 class="basic" style="font-size:400%"><center>VALUES</center></h2>
+<h3 style="font-family:CopprplGoth BT;" color="red">We belive in assisting each student to achieve her or his full musical potential.Excellence in teaching begins with strong relationships between faculty.</h3>
+<a href="registration.html"><img src="register.png" alt="register"   align="middle" style="width:200px;height:80px;"></a>
+
+<!-- The Contact Section -->
+  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <p class="w3-opacity w3-center"><i>Drop a note!</i></p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6 w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker" style="width:30px"></i> Mumbai, Maharashtra<br>
+        <i class="fa fa-phone" style="width:30px"></i> Phone: +91 9978456321<br>
+        <i class="fa fa-envelope" style="width:30px"> </i> Email: mozartsconservatory@mail.com<br>
+      </div>
+      <div class="w3-col m6">
+        <form action="contact.php" method="post">
+          <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+            </div>
+          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+          <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
+        </form>
+      </div>
+    </div>
+  </div>
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xxxlarge">
+  <a href="https://m.facebook.com/Mozarts-Conservatory-1742500749192215"> <i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/mozartsconservatory"> <i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://in.pinterest.com/mozartsconservatory"> <i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+  <a href="https://mobile.twitter.com/conservatory_s"> <i class="fa fa-twitter w3-hover-opacity"></i></a>
+  <a href="https://youtu.be/CAG1ch7n1CI"> <i class="fa fa-youtube w3-hover-opacity"></i></a>
+ </footer>
+</body>	
+</html>
+
+
+
+

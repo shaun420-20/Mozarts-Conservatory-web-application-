@@ -1,0 +1,26 @@
+[
+   {
+      "Programs": "Piano",
+      "Category": "Rock Piano, Zazz, Country Piano",
+      "Duration": "4 hours",
+      "Fees": "3500"
+   },
+   {
+      "Programs": "Guitar",
+      "Category": "POP and Rock, Blues/Jazz",
+      "Duration": "4 hours",
+      "Fees": "4000"
+   },
+   {
+      "Programs": "Vocals",
+      "Category": "Hindustani, Classical",
+      "Duration": "4 hours",
+      "Fees": "5000"
+   },
+   {
+      "Programs": "Violin",
+      "Category": "Classical",
+      "Duration": "4 hours",
+      "Fees": "2500"
+   }
+]

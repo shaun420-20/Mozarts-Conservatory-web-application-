@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="simple.xsl"?>
+<FEES>
+<fee-Details>
+<Programs>Piano</Programs>
+<Category>Rock Piano, Zazz, Country Piano</Category>
+<Duration>4 hours</Duration>
+<Fees>3500</Fees>
+</fee-Details>
+<fee-Details>
+<Programs>Guitar</Programs>
+<Category>POP and Rock, Blues/Jazz </Category>
+<Duration>4 hours</Duration>
+<Fees>4000</Fees>
+</fee-Details>
+<fee-Details>
+<Programs>Vocals</Programs>
+<Category>Hindustani, Classical</Category>
+<Duration>5 hours</Duration>
+<Fees>5000</Fees>
+</fee-Details>
+<fee-Details>
+<Programs>Violin</Programs>
+<Category>Classical</Category>
+<Duration>4 hours</Duration>
+<Fees>2500</Fees>
+</fee-Details>
+</FEES>

@@ -1,0 +1,160 @@
+body
+{
+  margin:0;
+  padding:0;
+  font-familly: sans-serif;
+  background-attachment: fixed;
+}
+header
+{
+  position: fixed;
+  top: 0;
+  Left: 0;
+  padding: 0 100px;
+  background: #262626;
+  width: 100%;
+  box-sizing: border-box;
+}
+header .logo
+{
+  font-family: "Tangerine", serif;
+  color: #fff;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+  
+} 
+header nav
+{
+  float: right;
+}
+header nav ul
+{
+ margin: 0;
+ padding: 0;
+ display: flex;
+ }
+header nav ul li 
+{
+  list-style: none;
+  position: relative;
+}
+header nav ul li.sub-menu:before 
+{
+  content: '\f0d7';
+  font-family: fontAwesome;
+  position: absolute;
+  Line-height: 50px;
+  color: #fff;
+  right: 5px;
+}
+header nav ul li.active.sub-menu:before
+{
+  content: '\f0d8';
+}
+
+header nav ul li ul
+{
+  position: absolute;
+  Left: 0;
+  background: #333;
+  display: none;
+}
+header nav ul li.active ul
+{
+  display: block;
+}
+
+
+
+
+header nav ul li ul li
+{
+  display: block;
+  width: 200px;
+}
+
+header nav ul li a
+{
+ height: 50px;
+ line-height: 50px;
+ padding: 0 20px;
+ color: #fff;
+ text-decoration: none;
+ display: block;
+}
+header nav ul li a:hover,
+header nav ul li a.active
+{
+  color: #fff;
+  background: red;
+}
+.menu-toggle
+{
+  color: yellow;
+  float: right;
+  line-height: 50px;
+  font-size: 24px;
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 991px)
+{
+  header
+   {
+     padding: 0 20px;
+   }
+   .menu-toggle
+   {
+    display: block;
+   }
+   header nav
+   {
+     position: absolute;
+     width: 100%;
+     height: calc(100vh - 50px);
+     background:#333;
+     top: 50px;
+     Left:-100%;
+     transition: 0.5s;
+   }
+   header nav.active
+   {
+     Left: 0;
+   }
+   header nav ul
+   {
+     display: block;
+     text-align: center;
+    
+   } 
+   header nav ul li a
+   {
+     border-bottom: 1px solid rgba(0,0,0,.2); 
+   }
+   header nav ul li.active ul
+   {
+     position: relative;
+     background: red;
+    }
+   header nav ul li ul li
+  {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
